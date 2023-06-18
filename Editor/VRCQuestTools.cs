@@ -6,7 +6,6 @@
 using System.IO;
 using KRT.VRCQuestTools.Models.Unity;
 using KRT.VRCQuestTools.Models.VRChat;
-using KRT.VRCQuestTools.Services;
 using KRT.VRCQuestTools.Utils;
 using UnityEditor;
 using UnityEngine;
@@ -35,11 +34,6 @@ namespace KRT.VRCQuestTools
         internal const int DaysToDelayUpdateNotification = 1;
 
         /// <summary>
-        /// GitHub repository (username/reponame).
-        /// </summary>
-        internal const string GitHubRepository = "kurotu/VRCQuestTools";
-
-        /// <summary>
         /// Booth URL.
         /// </summary>
         internal const string BoothURL = "https://kurotu.booth.pm/items/2436054";
@@ -53,11 +47,6 @@ namespace KRT.VRCQuestTools
         /// AvatarConverter object to use in application.
         /// </summary>
         internal static AvatarConverter AvatarConverter = new AvatarConverter(new MaterialWrapperBuilder());
-
-        /// <summary>
-        /// GitHub API service instance.
-        /// </summary>
-        internal static GitHubService GitHub = new GitHubService(GitHubRepository);
 
         private const string PackageJsonGUID = "a965857078462df4a879e07cb70812bb";
 
